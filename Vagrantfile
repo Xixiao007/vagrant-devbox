@@ -1,4 +1,4 @@
-# using vbox version 5.1.26
+# using vbox version 5.1.30 so addon plugin below works
 # https://github.com/dotless-de/vagrant-vbguest
 # vagrant plugin install vagrant-vbguest
 
