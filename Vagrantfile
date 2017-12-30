@@ -3,14 +3,17 @@
 # vagrant plugin install vagrant-vbguest
 
 Vagrant.configure("2") do |config|
+  # config.vm.box = "rosedevops/Ubuntu16.04-Desktop"
   config.vm.box = "bento/ubuntu-16.04"
   config.vm.hostname = "ubuntu16"
+  config.vm.define "ubuntu16"
+  # config.vm.network :private_network, ip: "192.168.33.33"
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = "ubuntu16"
-    vb.gui = true
+    # vb.gui = true
     vb.cpus = 2
-    vb.memory = "4096"
+    vb.memory = "2048"
 
     vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
     vb.customize ['modifyvm', :id, '--accelerate3d', 'on']
@@ -23,9 +26,15 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "file", source: "~/.ssh/known_hosts", destination: ".ssh/known_hosts"
   config.vm.provision "file", source: "~/.ssh/id_rsa", destination: ".ssh/id_rsa"
-  config.vm.provision "shell", privileged:false, inline: <<-SHELL
-    chmod og-rw .ssh/id_rsa
-  SHELL
 
-  config.vm.provision "shell", path: "provision.sh"
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "provision/playbook.yml"
+    # ansible.inventory_path = "provision/inventory"
+    ansible.become = true
+    ansible.become_user = "root"
+    ansible.compatibility_mode = "2.0"
+    ansible.galaxy_role_file = "requirements.yml"
+  end
+
+  # config.vm.provision "shell", path: "provision/extra-setup.sh"
 end

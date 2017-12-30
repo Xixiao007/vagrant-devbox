@@ -1,0 +1,5 @@
+---
+workspace: /root
+hostname: ubuntu16
+# git_install_from_source: false
+# ntp_timezone: America/Chicago
