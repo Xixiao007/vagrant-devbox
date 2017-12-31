@@ -1,3 +1,10 @@
 ---
-- src: geerlingguy.git
-- src: wtanaka.chrome
+- src: kbrebanov.git
+- src: geerlingguy.dotfiles
+# - src: wtanaka.chrome
+# - src: nephelaiio.tree
+# - src: andrewrothstein.tmux
+# - src: manala.vim
+# - src: gantsign.visual-studio-code
+# - src: gantsign.visual-studio-code-extensions
+# - src: telusdigital.fish

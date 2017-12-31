@@ -1,10 +1,21 @@
 ---
-- hosts: ubuntu16
+- hosts: all
   gather_facts: yes
 
   vars_files:
     - vars/main.yml
 
   roles:
-    - geerlingguy.git
+    - kbrebanov.git
+    - nephelaiio.tree
+    - andrewrothstein.tmux
+    - manala.vim
+    - telusdigital.fish
+    - gantsign.visual-studio-code
+    - role: gantsign.visual-studio-code-extensions
+      users:
+        - username: vagrant
+          visual_studio_code_extensions:
+            - Shan.code-settings-sync
     - wtanaka.chrome
+    - geerlingguy.dotfiles
