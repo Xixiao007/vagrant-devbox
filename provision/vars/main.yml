@@ -1,7 +1,7 @@
 ---
-workspace: /home/vagrant
+# workspace: /home/vagrant
 # hostname: ubuntu16
-dotfiles_repo: "git@github.com:Xixiao007/dotfiles-ubuntu.git"
+dotfiles_repo: "git@github.com:Xixiao007/mac-vagrant-ubuntu.git"
 dotfiles_repo_local_destination: "~/dotfiles"
 dotfiles_home: "~"
 dotfiles_files:
@@ -10,5 +10,7 @@ dotfiles_files:
   - .editorconfig
   - .gitconfig
   - bg.jpg
-  - .config
+  - .config/fish
+  - .config/i3
+  - .config/i3status
 # ntp_timezone: America/Chicago

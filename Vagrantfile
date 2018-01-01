@@ -29,12 +29,13 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "provision/playbook.yml"
-    ansible.become = true
-    ansible.become_user = "root"
+    ansible.sudo = true
+    # ansible.become = true
+    # ansible.become_user = "sudo"
     ansible.compatibility_mode = "2.0"
     ansible.galaxy_role_file = "requirements.yml"
     # ansible.inventory_path = "provision/inventory"
   end
 
- config.vm.provision "shell", path: "provision/extra-setup.sh"
+  config.vm.provision "shell", privileged: false, path: "provision/extra-setup.sh"
 end
