@@ -7,3 +7,4 @@
 - src: gantsign.visual-studio-code
 - src: gantsign.visual-studio-code-extensions
 - src: telusdigital.fish
+- src: Stouts.timezone

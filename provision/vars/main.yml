@@ -1,6 +1,4 @@
 ---
-# workspace: /home/vagrant
-# hostname: ubuntu16
 dotfiles_repo: "git@github.com:Xixiao007/mac-vagrant-ubuntu.git"
 dotfiles_repo_local_destination: "~/dotfiles"
 dotfiles_home: "~"
@@ -13,4 +11,5 @@ dotfiles_files:
   - .config/fish
   - .config/i3
   - .config/i3status
-# ntp_timezone: America/Chicago
+timezone_enabled: yes
+timezone_timezone: Europe/Helsinki
