@@ -46,6 +46,13 @@ mkdir projects
 rm -Rf Documents Music Pictures Public Templates Videos
 rm -Rf temp
 
+# auto-login
+sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
+echo '[Service]
+ExecStart=
+ExecStart=-/sbin/agetty --noissue --autologin vagrant %I $TERM
+Type=idle' | sudo tee --append /etc/systemd/system/getty@tty1.service.d/override.conf
+
 # prepare post_action
 cp /vagrant/provision/post_action.sh ${vagrant_path}
 chmod +x ${vagrant_path}/post_action.sh

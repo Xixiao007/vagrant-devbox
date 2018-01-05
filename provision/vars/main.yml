@@ -6,6 +6,7 @@ dotfiles_files:
   - .Xdefaults
   - .Xmodmap_vagrant
   - .editorconfig
+  - .tmux.conf
   - .gitconfig
   - bg.jpg
   - .config/fish
