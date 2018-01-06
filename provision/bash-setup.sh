@@ -53,10 +53,9 @@ ExecStart=
 ExecStart=-/sbin/agetty --noissue --autologin vagrant %I $TERM
 Type=idle' | sudo tee --append /etc/systemd/system/getty@tty1.service.d/override.conf
 
-# prepare post_action
+# prepare post_action to be manually run after provision
+# I didn't figure out how to do it in bash script
 cp /vagrant/provision/post_action.sh ${vagrant_path}
 chmod +x ${vagrant_path}/post_action.sh
 
-# last step
-sudo apt-get upgrade -y
-reboot
+sudo reboot

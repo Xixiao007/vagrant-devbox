@@ -37,5 +37,5 @@ Vagrant.configure("2") do |config|
     # ansible.inventory_path = "provision/inventory"
   end
 
-  config.vm.provision "shell", privileged: false, path: "provision/extra-setup.sh"
+  config.vm.provision "shell", privileged: false, path: "provision/bash-setup.sh"
 end
