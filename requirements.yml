@@ -8,3 +8,4 @@
 - src: gantsign.visual-studio-code-extensions
 - src: telusdigital.fish
 - src: Stouts.timezone
+- src: pablocrivella.heroku-toolbelt
