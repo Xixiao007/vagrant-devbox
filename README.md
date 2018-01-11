@@ -1,4 +1,4 @@
-# My Ubuntu image in Vagrant Virtualbox
+# My Salesforce dev environment with Ubuntu image in Vagrant Virtualbox
 
 ## all setups are automated by vagrant and ansible
 
