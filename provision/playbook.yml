@@ -20,4 +20,5 @@
     - wtanaka.chrome
     - geerlingguy.dotfiles
     - Stouts.timezone
-    - pablocrivella.heroku-toolbelt
+    #heroku-toolbelt throws error in biit-mac, no idea why. TO-DO: we can install it in post_bash_script
+    # - pablocrivella.heroku-toolbelt
