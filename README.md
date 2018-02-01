@@ -2,7 +2,7 @@
 
 ## All setups are automated by vagrant and ansible
 
-Check `Vagrantfile` as a start point. It configures virtualbox, calls ansible and bashscript `provision/extra-setup.sh`
+Check `Vagrantfile` as a start point. It configures virtualbox, calls ansible and bashscript `provision/bash-setup.sh`
 
 ## Prerequisite
 - Install [Ansible](http://docs.ansible.com/ansible/latest/intro_installation.html)
