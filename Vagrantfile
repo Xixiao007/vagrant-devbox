@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
     vb.name = "ubuntu16"
     vb.gui = true
     vb.cpus = 2
-    vb.memory = "2048"
+    vb.memory = "4096"
 
     vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
     vb.customize ['modifyvm', :id, '--accelerate3d', 'on']
