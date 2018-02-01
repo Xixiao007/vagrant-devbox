@@ -6,7 +6,7 @@ Check `Vagrantfile` as a start point. It configures virtualbox, calls ansible an
 
 ## Prerequisite
 - Install [Ansible](http://docs.ansible.com/ansible/latest/intro_installation.html)
-- Install [Virtualbox](https://www.virtualbox.org/wiki/Downloads).**version must be 5.1.30r118389, newer version might fail with different issues**
+- Install [Virtualbox](https://www.virtualbox.org/wiki/Downloads). **Version must be 5.1.30r118389, newer version might fail with different issues**
 - Install [Vagrant](https://www.vagrantup.com/downloads.html)
 - run `vagrant plugin install vagrant-vbguest` command to install this vagrant addition so the virtualbox addon is added (supporting fullscreen resolution, across host-guest copy-paste ect.)
 
