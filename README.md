@@ -1,5 +1,22 @@
 # My Salesforce dev environment with Ubuntu image in Vagrant Virtualbox
 
+Salesforce is a cloud service, dev environment is reasonably easy to setup. It requires:
+
+- a browser
+- a text editor
+- a console to run commands
+- tools such as ant (I am colleting tools regularly)
+
+This dev box is tailored for myself. It contains:
+
+- a minimum size headless ubuntu OS downloaded from Vagrant official repository
+- a [i3 wm GUI](https://i3wm.org/)
+- a gnome-terminal with fish shell(https://fishshell.com/)
+- my [own dotfiles](https://github.com/Xixiao007/dotfiles-ubuntu-mac)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- other minor settings that can be found from the vagrant playbook or bash-scripts stored in this repo
+
+
 ## All setups are automated by vagrant and ansible
 
 Check `Vagrantfile` as a start point. It configures virtualbox, calls ansible and bashscript `provision/bash-setup.sh`
