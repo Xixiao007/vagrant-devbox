@@ -15,3 +15,8 @@ Note. if you install prerequisites from system package system, like in Ubuntu, p
 ## Provision the VM
 
 `vagrant up` in the root path of this repo should do.
+
+## To-DO
+
+- add Ant to playbook
+- make bash script idempodent
