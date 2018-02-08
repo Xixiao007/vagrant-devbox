@@ -19,4 +19,4 @@ Note. if you install prerequisites from system package system, like in Ubuntu, p
 ## To-DO
 
 - add Ant to playbook
-- make bash script idempodent
+- make bash script idempotent or use tag to run?
