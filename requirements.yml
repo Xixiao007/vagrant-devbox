@@ -9,4 +9,7 @@
 - src: gantsign.visual-studio-code-extensions
 - src: telusdigital.fish
 - src: Stouts.timezone
+- src: andrewrothstein.java-oracle-jdk
+- src: robdyke.ant
+- src: azavea.unzip
 # - src: pablocrivella.heroku-toolbelt

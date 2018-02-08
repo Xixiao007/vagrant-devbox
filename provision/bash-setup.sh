@@ -40,6 +40,11 @@ sudo usermod -s /usr/bin/fish vagrant
 # fishman
 curl -Lo ${vagrant_path}/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher
 
+# salesforce migration tool v41.0
+wget -q Download https://gs0.salesforce.com/dwnld/SfdcAnt/salesforce_ant_41.0.zip
+unzip salesforce_ant_41.0.zip
+sudo mv ant-salesforce.jar /usr/local/bin
+
 # cleaning folders
 cd ${vagrant_path}
 mkdir projects
