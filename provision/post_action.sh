@@ -4,11 +4,6 @@
 mkdir -p /home/vagrant/temp
 cd /home/vagrant/temp
 
-# oracle java8 - It is in post action because the license accept window cannot passed by in vagrant
-sudo add-apt-repository ppa:webupd8team/java -y
-sudo apt-get update -y
-sudo apt-get install oracle-java8-installer -y
-
 # fish post_actions
 fisher fnm
 fnm 8
