@@ -60,4 +60,4 @@ mkdir projects
 rm -Rf Documents Music Pictures Public Templates Videos
 rm -Rf temp
 
-# sudo reboot
+sudo reboot
