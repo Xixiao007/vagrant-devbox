@@ -10,6 +10,8 @@
 - src: telusdigital.fish
 - src: Stouts.timezone
 - src: andrewrothstein.java-oracle-jdk
-- src: robdyke.ant
+# - src: robdyke.ant
+# - src: bbaassssiiee.base_ant
 - src: azavea.unzip
+- src: ferrarimarco.eclipse
 # - src: pablocrivella.heroku-toolbelt
