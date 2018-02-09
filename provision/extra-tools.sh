@@ -1,4 +1,5 @@
 #! /usr/bin/bash
+
 # preparation
 vagrant_path=/home/vagrant
 temp_path=${vagrant_path}/temp
@@ -13,10 +14,9 @@ sudo apt-get install oracle-java8-installer -y
 # ant
 sudo apt-get install ant -y
 
-# Ecplise
-curl -k https://raw.githubusercontent.com/budhash/install-eclipse/master/install-eclipse > install-eclipse; chmod +x install-eclipse
-./install-eclipse -p "https://developer.salesforce.com/media/force-ide/eclipse45" eclipse
-# ./install-eclipse -p "http://download.eclipse.org/releases/neon,org.eclipse.jdt.feature.group" eclipse
+# Ecplise TO-DO
+# curl -k https://raw.githubusercontent.com/budhash/install-eclipse/master/install-eclipse > install-eclipse; chmod +x install-eclipse
+# ./install-eclipse -p "https://developer.salesforce.com/media/force-ide/eclipse45" eclipse
 
 # salesforce migration tool v41.0
 wget -q Download https://gs0.salesforce.com/dwnld/SfdcAnt/salesforce_ant_41.0.zip

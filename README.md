@@ -36,7 +36,9 @@ Note. if you install prerequisites from system package system, like in Ubuntu, p
 
 `vagrant up` in the root path of this repo should do.
 
-## To-DO
+## TO-DO
+
+cleaning folder step in bash script is not working?
 
 synced folder not working: /vagrant is empty
 
