@@ -4,6 +4,9 @@
 mkdir -p /home/vagrant/temp
 cd /home/vagrant/temp
 
+# diable screensaver
+xset s off
+
 # fish post_actions
 fisher fnm
 fnm 8
