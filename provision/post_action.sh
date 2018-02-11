@@ -22,6 +22,7 @@ mv ant-salesforce.jar /home/vagrant/projects/
 # sudo mv ant-salesforce.jar /usr/local/bin
 
 # clean
+rm -Rf Documents Music Pictures Public Templates Videos
 rm -rf /home/vagrant/temp
 
 # upgrade system to latest
