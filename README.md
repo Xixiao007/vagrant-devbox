@@ -38,11 +38,7 @@ Note. if you install prerequisites from system package system, like in Ubuntu, p
 
 ## TO-DO
 
-cleaning folder step in bash script is not working?
-
 synced folder not working: /vagrant is empty
-
-copy using C-c in gnome-terminal
 
 copy from host to guest terminal vim session
 
