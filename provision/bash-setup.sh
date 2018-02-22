@@ -47,6 +47,9 @@ ExecStart=
 ExecStart=-/sbin/agetty --noissue --autologin vagrant %I $TERM
 Type=idle' | sudo tee --append /etc/systemd/system/getty@tty1.service.d/override.conf
 
+# install audio tool
+sudo apt-get install alsa-utils -y
+
 # prepare post_action to be manually run after provision
 # I didn't figure out how to do it in bash script
 cp /vagrant/provision/post_action.sh ${vagrant_path}
@@ -60,4 +63,4 @@ mkdir projects
 rm -Rf Documents Music Pictures Public Templates Videos
 rm -Rf temp
 
-# sudo reboot
+sudo reboot
