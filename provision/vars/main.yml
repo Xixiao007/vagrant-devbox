@@ -1,5 +1,5 @@
 ---
-dotfiles_repo: "git@github.com:Xixiao007/mac-vagrant-ubuntu.git"
+dotfiles_repo: "git@github.com:Xixiao007/dotfiles-mac-vagrant-ubuntu.git"
 dotfiles_repo_local_destination: "~/dotfiles"
 dotfiles_home: "~"
 dotfiles_files:
