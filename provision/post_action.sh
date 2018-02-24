@@ -8,6 +8,7 @@ cd /home/vagrant/temp
 xset s off
 
 # fish post_actions
+fisher fzf
 fisher fnm
 fnm 8
 npm install sfdx-cli --global

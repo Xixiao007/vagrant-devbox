@@ -4,8 +4,15 @@ temp_path=${vagrant_path}/temp
 mkdir -p ${vagrant_path}/temp
 cd ${temp_path}
 
+# add enpass source
+echo "deb http://repo.sinew.in/ stable main" | sudo tee --append /etc/apt/sources.list.d/enpass.list
+wget -O - https://dl.sinew.in/keys/enpass-linux.key | sudo apt-key add -
+
 # refresh sudo apt-get update
 sudo apt-get update -y
+
+# enpass
+sudo apt-get install enpass -y
 
 # ssh key
 chmod og-rw ${vagrant_path}/.ssh/id_rsa
@@ -14,6 +21,9 @@ chmod og-rw ${vagrant_path}/.ssh/id_rsa
 # gnome-terminal
 sudo apt-get install gnome-terminal -y
 
+# fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git
+./fzf/install
 # i3
 /usr/lib/apt/apt-helper download-file http://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2017.01.02_all.deb keyring.deb SHA256:4c3c6685b1181d83efe3a479c5ae38a2a44e23add55e16a328b8c8560bf05e5f
 sudo dpkg -i ./keyring.deb
