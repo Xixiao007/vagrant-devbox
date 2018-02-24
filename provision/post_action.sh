@@ -7,6 +7,10 @@ cd /home/vagrant/temp
 # diable screensaver
 xset s off
 
+# fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git
+./fzf/install
+
 # fish post_actions
 fisher fzf
 fisher fnm
