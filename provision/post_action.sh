@@ -11,11 +11,19 @@ xset s off
 git clone --depth 1 https://github.com/junegunn/fzf.git /home/vagrant/.fzf
 /home/vagrant/.fzf/install
 
+# enable new keybinding for fzf
+set -U FZF_LEGACY_KEYBINDINGS 0
+
 # fish post_actions
 fisher fzf
 fisher fnm
 fnm 8
 npm install sfdx-cli --global
+
+# oracle java8 - It is in post action because the license accept window cannot passed by in vagrant
+sudo add-apt-repository ppa:webupd8team/java -y
+sudo apt-get update -y
+sudo apt-get install oracle-java8-installer -y
 
 # ant
 sudo apt-get install ant -y
