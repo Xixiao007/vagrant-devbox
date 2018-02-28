@@ -25,7 +25,7 @@ TO-DO
 Check `Vagrantfile` as a start point. It configures virtualbox, calls ansible and bashscript `provision/bash-setup.sh`
 
 ## Prerequisite
-- Install [Ansible](http://docs.ansible.com/ansible/latest/intro_installation.html) **In mac, I need to run this command to install and upgrade Ansible succesfully due to Mac's "System Integrity Protection" feature: `sudo pip install --ignore-installed --upgrade ansible`
+- Install [Ansible](http://docs.ansible.com/ansible/latest/intro_installation.html) **In mac, I need to run this command to install and upgrade Ansible succesfully due to Mac's "System Integrity Protection" feature: `sudo pip install --ignore-installed --upgrade ansible`**
 - Install [Virtualbox](https://www.virtualbox.org/wiki/Downloads). **In Mac host, vbox version must be [5.1.30r118389](https://download.virtualbox.org/virtualbox/5.1.30/VirtualBox-5.1.30-118389-OSX.dmg), newer version cannot open installed apps in i3. No idea what caused this**
 - Install [Vagrant](https://www.vagrantup.com/downloads.html)
 - run `vagrant plugin install vagrant-vbguest` command to install this vagrant addition so the virtualbox addon is added (supporting fullscreen resolution, across host-guest copy-paste ect.)
