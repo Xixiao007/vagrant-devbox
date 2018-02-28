@@ -4,13 +4,13 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-16.04"
-  config.vm.hostname = "playbox"
-  config.vm.define "playbox"
+  config.vm.hostname = "Rocla"
+  config.vm.define "Rocla"
   # config.vm.box = "rosedevops/Ubuntu16.04-Desktop"
   # config.vm.network :private_network, ip: "192.168.33.33"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "playbox"
+    vb.name = "Rocla"
     vb.gui = true
     vb.cpus = 2
     vb.memory = "4096"
