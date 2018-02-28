@@ -10,6 +10,8 @@ xset s off
 # fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git
 ./fzf/install
+# enable new keybinding for fzf
+set -U FZF_LEGACY_KEYBINDINGS 0
 
 # fish post_actions
 fisher fzf
