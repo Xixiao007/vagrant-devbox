@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
     vb.name = "Rocla"
     vb.gui = true
     vb.cpus = 2
-    vb.memory = "4096"
+    vb.memory = "6144"
 
     vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
     vb.customize ['modifyvm', :id, '--accelerate3d', 'on']
