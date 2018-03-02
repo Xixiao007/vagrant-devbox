@@ -6,19 +6,20 @@ Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-16.04"
   config.vm.hostname = "testbox"
   config.vm.define "testbox"
+  config.disksize.size = '15GB'
   # config.vm.box = "rosedevops/Ubuntu16.04-Desktop"
   # config.vm.network :private_network, ip: "192.168.33.33"
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = "testbox"
     vb.gui = true
-    vb.cpus = 2
-    vb.memory = "4096"
+    vb.cpus = 1
+    vb.memory = "3068"
 
     vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
     vb.customize ['modifyvm', :id, '--accelerate3d', 'on']
-    vb.customize ['modifyvm', :id, '--vram', '128']
-    vb.customize ['modifyvm', :id, '--cpus', '2']
+    vb.customize ['modifyvm', :id, '--vram', '28']
+    vb.customize ['modifyvm', :id, '--cpus', '1']
     vb.customize ['modifyvm', :id, '--bioslogofadein', 'off']
     vb.customize ['modifyvm', :id, '--bioslogofadeout', 'off']
     vb.customize ['modifyvm', :id, '--bioslogodisplaytime', '1000']
