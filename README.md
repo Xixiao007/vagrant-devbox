@@ -29,6 +29,7 @@ Check `Vagrantfile` as a start point. It configures virtualbox, calls ansible an
 - Install [Virtualbox](https://www.virtualbox.org/wiki/Downloads). -------- **In Mac host, vbox version must be [5.1.30r118389](https://download.virtualbox.org/virtualbox/5.1.30/VirtualBox-5.1.30-118389-OSX.dmg), newer version cannot open installed apps in i3. No idea what caused this**
 - Install [Vagrant](https://www.vagrantup.com/downloads.html)
 - run `vagrant plugin install vagrant-vbguest` command to install this vagrant addition so the virtualbox addon is added (supporting fullscreen resolution, across host-guest copy-paste ect.)
+- run `vagrant plugin install vagrant-disksize` to install disk sizing plugin so the VM can be allocated with the right size defined in `Vagrantfile`
 
 Note. if you install prerequisites from system package system, like in Ubuntu, pay attention to the version, usually they are not up-to-date. Instead, using the install URL above to manually install the latest version is recommended.
 
