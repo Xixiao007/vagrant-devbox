@@ -4,16 +4,16 @@
 
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-16.04"
-  config.vm.hostname = "Rocla"
-  config.vm.define "Rocla"
+  config.vm.hostname = "testbox"
+  config.vm.define "testbox"
   # config.vm.box = "rosedevops/Ubuntu16.04-Desktop"
   # config.vm.network :private_network, ip: "192.168.33.33"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "Rocla"
+    vb.name = "testbox"
     vb.gui = true
     vb.cpus = 2
-    vb.memory = "6144"
+    vb.memory = "4096"
 
     vb.customize ['modifyvm', :id, '--clipboard', 'bidirectional']
     vb.customize ['modifyvm', :id, '--accelerate3d', 'on']
