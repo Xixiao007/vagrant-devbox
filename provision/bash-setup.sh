@@ -8,9 +8,6 @@ cd ${temp_path}
 echo "deb http://repo.sinew.in/ stable main" | sudo tee --append /etc/apt/sources.list.d/enpass.list
 wget -O - https://dl.sinew.in/keys/enpass-linux.key | sudo apt-key add -
 
-# add git repo
-sudo apt-add-repository ppa:git-core/ppa -y
-
 # refresh sudo apt-get update
 sudo apt-get update -y
 
@@ -22,10 +19,10 @@ chmod og-rw ${vagrant_path}/.ssh/id_rsa
 #systemctl restart ssh
 
 # gnome-terminal
-sudo apt-get install gnome-terminal -y
-wget https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh && . one-dark.sh
-chmod +x one-dark.sh
-./one-dark.sh
+# sudo apt-get install gnome-terminal -y
+# wget https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh && . one-dark.sh
+# chmod +x one-dark.sh
+# ./one-dark.sh
 
 # i3
 /usr/lib/apt/apt-helper download-file http://debian.sur5r.net/i3/pool/main/s/sur5r-keyring/sur5r-keyring_2017.01.02_all.deb keyring.deb SHA256:4c3c6685b1181d83efe3a479c5ae38a2a44e23add55e16a328b8c8560bf05e5f

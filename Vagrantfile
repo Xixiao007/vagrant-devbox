@@ -4,15 +4,16 @@
 
 Vagrant.configure("2") do |config|
   # config.vm.box = "bento/ubuntu-16.04"
-  config.vm.box = "ubuntu/trusty64"
-  config.vm.hostname = "tempbox"
-  config.vm.define "tempbox"
+  # config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "geerlingguy/ubuntu1604"
+  config.vm.hostname = "Rocla"
+  config.vm.define "Rocla"
   config.disksize.size = '15GB'
   # config.vm.box = "rosedevops/Ubuntu16.04-Desktop"
   # config.vm.network :private_network, ip: "192.168.33.33"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "tempbox"
+    vb.name = "Rocla"
     vb.gui = true
     vb.cpus = 1
     vb.memory = "3068"
