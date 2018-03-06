@@ -26,12 +26,12 @@ sudo apt-get update -y
 sudo apt-get install oracle-java8-installer -y
 
 # ant
-sudo apt-get install ant -y
+# sudo apt-get install ant -y
 
 # salesforce migration tool v41.0 send to projects folder TO-DO: put to path not working
-wget -q Download https://gs0.salesforce.com/dwnld/SfdcAnt/salesforce_ant_41.0.zip
-unzip salesforce_ant_41.0.zip
-mv ant-salesforce.jar /home/vagrant/projects/
+# wget -q Download https://gs0.salesforce.com/dwnld/SfdcAnt/salesforce_ant_41.0.zip
+# unzip salesforce_ant_41.0.zip
+# mv ant-salesforce.jar /home/vagrant/projects/
 # sudo mv ant-salesforce.jar /usr/local/bin
 
 # clean
