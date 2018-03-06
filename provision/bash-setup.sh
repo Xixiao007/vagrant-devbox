@@ -8,11 +8,14 @@ cd ${temp_path}
 echo "deb http://repo.sinew.in/ stable main" | sudo tee --append /etc/apt/sources.list.d/enpass.list
 wget -O - https://dl.sinew.in/keys/enpass-linux.key | sudo apt-key add -
 
+# add git repo
+sudo apt-add-repository ppa:git-core/ppa -y
+
 # refresh sudo apt-get update
 sudo apt-get update -y
 
-# enpass
-sudo apt-get install enpass -y
+# install various tools
+sudo apt-get install git alsa-utils enpass unzip vim tree -y
 
 # ssh key
 chmod og-rw ${vagrant_path}/.ssh/id_rsa
@@ -56,9 +59,6 @@ echo '[Service]
 ExecStart=
 ExecStart=-/sbin/agetty --noissue --autologin vagrant %I $TERM
 Type=idle' | sudo tee --append /etc/systemd/system/getty@tty1.service.d/override.conf
-
-# install audio tool
-sudo apt-get install alsa-utils -y
 
 # prepare post_action to be manually run after provision
 # I didn't figure out how to do it in bash script

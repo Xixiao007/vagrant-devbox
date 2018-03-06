@@ -1,17 +1,16 @@
 ---
-- src: kbrebanov.git
 - src: geerlingguy.dotfiles
-- src: nephelaiio.tree
-- src: andrewrothstein.tmux
-- src: manala.vim
+# - src: nephelaiio.tree
+# - src: andrewrothstein.tmux
+# - src: manala.vim
 - src: wtanaka.chrome
 - src: gantsign.visual-studio-code
 - src: gantsign.visual-studio-code-extensions
 - src: telusdigital.fish
 - src: Stouts.timezone
-- src: andrewrothstein.java-oracle-jdk
+# - src: andrewrothstein.java-oracle-jdk
 # - src: robdyke.ant
 # - src: bbaassssiiee.base_ant
-- src: azavea.unzip
-- src: ferrarimarco.eclipse
+# - src: azavea.unzip
+# - src: ferrarimarco.eclipse
 # - src: pablocrivella.heroku-toolbelt
