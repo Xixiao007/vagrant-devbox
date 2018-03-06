@@ -3,17 +3,17 @@
 # vagrant plugin install vagrant-vbguest
 
 Vagrant.configure("2") do |config|
-  # config.vm.box = "bento/ubuntu-16.04"
+  config.vm.box = "bento/ubuntu-16.04"
   # config.vm.box = "ubuntu/trusty64"
-  config.vm.box = "geerlingguy/ubuntu1604"
-  config.vm.hostname = "Rocla"
-  config.vm.define "Rocla"
+  # config.vm.box = "geerlingguy/ubuntu1604"
+  config.vm.hostname = "Rocla-min"
+  config.vm.define "Rocla-min"
   config.disksize.size = '15GB'
   # config.vm.box = "rosedevops/Ubuntu16.04-Desktop"
   # config.vm.network :private_network, ip: "192.168.33.33"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "Rocla"
+    vb.name = "Rocla-min"
     vb.gui = true
     vb.cpus = 1
     vb.memory = "3068"
