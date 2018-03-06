@@ -3,15 +3,16 @@
 # vagrant plugin install vagrant-vbguest
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "bento/ubuntu-16.04"
-  config.vm.hostname = "testbox"
-  config.vm.define "testbox"
+  # config.vm.box = "bento/ubuntu-16.04"
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.hostname = "tempbox"
+  config.vm.define "tempbox"
   config.disksize.size = '15GB'
   # config.vm.box = "rosedevops/Ubuntu16.04-Desktop"
   # config.vm.network :private_network, ip: "192.168.33.33"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.name = "testbox"
+    vb.name = "tempbox"
     vb.gui = true
     vb.cpus = 1
     vb.memory = "3068"
