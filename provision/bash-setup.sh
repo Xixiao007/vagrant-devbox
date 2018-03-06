@@ -33,6 +33,10 @@ sudo apt-get install i3 feh scrot conky-all -y
 sudo apt-get install xinit -y
 sudo apt-get install x11-xserver-utils
 
+# set locale
+locale-gen --purge en_US.UTF-8
+echo -e 'LANG="en_US.UTF-8"\nLANGUAGE="en_US:en"\n' > /etc/default/locale
+
 # Consolas font
 sudo apt-get install font-manager cabextract -y
 set -e
